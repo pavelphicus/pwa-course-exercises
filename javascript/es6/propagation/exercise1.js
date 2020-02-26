@@ -4,4 +4,5 @@ let sum = (...values) => {
     return total;
 };
 
+console.log(`Total: ${sum(1, 2, 3)}`);
 console.log(`Total: ${sum(1, 2, 3, 4, 5, 6, 7)}`);

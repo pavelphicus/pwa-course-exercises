@@ -1,5 +1,5 @@
-import Animal from './Animal.js';
-import Human from './Human.js';
+import Animal from './models/Animal.js';
+import Human from './models/Human.js';
 
 let bear = new Animal('Yogi', 4, 3);
 bear.hi();

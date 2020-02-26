@@ -1,4 +1,6 @@
-const a = 1;
-a = 2;
+let a = 1;
+let b = 2;
 
-console.log(`a: ${a}`);
+a = b;
+
+console.log(`a: ${a}, b: ${b}`);

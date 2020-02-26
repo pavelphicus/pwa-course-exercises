@@ -5,9 +5,9 @@ console.log('Elements:', elements);
 // Filter elements that contains 'e' in id and calc de average of her values
 let eSum = 0;
 let eElements = elements
-    .filter((element) => element.id.includes('e'))
-    .map((element) => element.value);
+    .filter(element => element.id.includes('e'))
+    .map(element => element.value);
 console.log('Elements with "e" in ID:', eElements);
 eElements
-    .forEach((element, i) => eSum += element);
+    .forEach(element => eSum += element);
 console.log(`The average of "e" elements is: ${eSum / eElements.length}`);
