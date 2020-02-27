@@ -5,10 +5,10 @@ function addCallbackDelay(a, b, delay, callBack) {
         callBack(a + b);
     }, delay);
 }
-addCallbackDelay(1, 2, 1000, function(response) {
-    addCallbackDelay(response, 3, 1000, function(response) {
-        addCallbackDelay(response, 4, 1000, function(response) {
-            console.log(`Response (addCallbackDelay): ${response}`);
+addCallbackDelay(1, 2, 1000, function(c) {
+    addCallbackDelay(c, 3, 500, function(d) {
+        addCallbackDelay(d, 4, 10000, function(e) {
+            console.log(`Response (addCallbackDelay): ${e}`);
         });
     });
 });
