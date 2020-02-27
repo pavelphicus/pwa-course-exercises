@@ -1,5 +1,4 @@
 let url = 'https://reqres.in/api/users';
-let bad_url = 'https://reqres.in/api';
 let data = {
     "name" : "John Doe",
     "job" : "Engineer",

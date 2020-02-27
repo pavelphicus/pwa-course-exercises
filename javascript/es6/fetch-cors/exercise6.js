@@ -3,7 +3,7 @@ let url = 'https://reqres.in/api/users/100000';
 fetch(url)
     .then(response => {
         // console.log(response);
-        if (response.ok && response.status >= 200 && response.status < 300) {
+        if (response.ok && response.status >= 200 && response.status < 400) {
             return response.json();
         } else {
             // console.error("Error requesting user: ", response.status);
