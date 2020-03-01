@@ -25,5 +25,15 @@ self.addEventListener('fetch', event => {
 });
 
 self.addEventListener('push', event => {
-    console.log('SW: Push notification received', event);
+    let random = Math.round(Math.random() * 1000);
+    self.registration.showNotification("Hello!", {
+        body: `I'm a Notification from SW`,
+        icon: '/assets/pwa.png',
+        tag: `Notification_${random}`
+    })
+        .then(notificationEvent => {
+            console.log("SW Notification Event Promise");
+        });
+    //new Notification("Hello, I'm a Notification!");
+    // console.log('SW: Push notification received', event);
 });
