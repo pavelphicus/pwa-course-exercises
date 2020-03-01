@@ -2,7 +2,7 @@ let url = 'https://reqres.in/api/users/100000';
 
 fetch(url)
     .then(response => {
-        // console.log(response);
+        console.log(response);
         if (response.ok && response.status >= 200 && response.status < 400) {
             return response.json();
         } else {
@@ -12,5 +12,5 @@ fetch(url)
     })
     .then(console.log)
     .catch(error => {
-        console.error(error);
+        console.error("Captura de excepción", error);
     });

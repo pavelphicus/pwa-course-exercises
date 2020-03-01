@@ -6,7 +6,11 @@ request.send(null);
 
 request.onreadystatechange = function(state) {
     if (request.readyState === 4) {
+        // console.log(request.response);
         var response = JSON.parse(request.response);
-        console.log(response);
+        response.data.forEach(d => {
+            console.log(d);
+        })
+        // console.log(response.data);
     }
 };
