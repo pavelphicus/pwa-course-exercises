@@ -140,10 +140,7 @@
 </template>
 
 <script>
-    // Todo: Register in Weather API to obtain a apiKey: https://openweathermap.org/api
-    // Todo: Remove locations
     // Todo: detect change of currentLocation to get new weather info and set it in store
-    // Todo: persists current data in cache/localStorage
     // Todo: extract sideMenu, addNewLocation dialog and currentLocation view to components
     // Todo: use Flickr api to get random image of currentLocation and set it at background (https://www.flickr.com/services/api/, https://www.flickr.com/services/api/auth.oauth.html)
 
